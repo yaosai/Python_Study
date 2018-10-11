@@ -71,3 +71,35 @@ print(a)
 # insert(index,data)
 a.insert(2, 10)
 print(a)
+
+# 简单操作是传地址操作
+a = [1, 2, 3, 4, 5, 666]
+b = a
+b[3] = 777
+print(a)
+print(id(a))
+print(b)
+print(id(b))
+
+# 为了解决传值，使用copy函数，注意！copy函数是浅拷贝
+b = a.copy()
+print(id(b))
+
+a = [1, 2, 3, [10, 20, 30]]
+b = a.copy()
+print("-" * 20)
+print(id(a))
+print(id(b))
+print(id(a[3]))
+print(id(b[3]))
+# 虽然a和b地址不一样，但内部的list还是浅拷贝，深拷贝需要import copy,使用copy.deepcopy()
+
+# 深拷贝，包含对象里面的自对象的拷贝，所以原始对象的改变不会造成深拷贝里任何子元素的改变
+print("-" * 20)
+import copy
+
+d = copy.deepcopy(a)
+print(a)
+print(d)
+print(id(a[3]))
+print(id(d[3]))
