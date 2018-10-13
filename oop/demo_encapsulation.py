@@ -28,11 +28,10 @@ print(p._Person__age)
 # 在成员名称前加一个下划线即可
 
 
-# class Teacher():
-#     # name是公有变量public
-#     name = "lilei"
-#     # age是私有变量private
-#     # python的私有不是真正的私有，是一种改名的策略，外部访问不到是因为变量名不是__开头了
-#     _age = 18
-#     __score = 100
-
+class Teacher():
+    # name是公有变量public
+    name = "lilei"
+    # age是私有变量private
+    # python的私有不是真正的私有，是一种改名的策略，外部访问不到是因为变量名不是__开头了
+    _age = 18
+    __score = 100
