@@ -1,7 +1,7 @@
 #!/usr/bin/env python 
 # -*- coding:utf-8 -*-
 
-# @file: demo_inheritance.py
+# @file: demo_inheritance_1.py
 # @author: YaoS
 # @contact: yao.sai@hotmail.com
 # @time: 18/10/12 0:16
@@ -59,4 +59,5 @@ c = C("hahaha")
 # super不是关键字，而是一个类
 # super是获取MRO列表中的第一个类，而这个类就是对象的父类
 # 因此，super虽然不是父类，但是通过super可以调用到第一个类
-# super使用两个方法
+# 打印mro列表，可以看到一层层的类
+print(C.__mro__)
