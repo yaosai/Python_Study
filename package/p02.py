@@ -5,7 +5,7 @@
 # @author: YaoS
 # @contact: yao.sai@hotmail.com
 # @time: 18/10/17 0:00
-# @desc:
+# @desc: 模块管理练习02
 
 
 import p01
