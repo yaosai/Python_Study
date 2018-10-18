@@ -9,5 +9,5 @@
 
 from pkg02 import *
 
-stu = Student()
+stu = pkg01.Student()
 stu.say()
