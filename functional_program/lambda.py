@@ -15,3 +15,22 @@ print(stm1(10))
 
 stm2 = lambda x, y: x * y
 print(stm2(10, 10))
+
+
+# 定义函数A
+def funA(n):
+    return n * 10
+
+
+# 定义函数B
+def funB(n):
+    return n * 3
+
+
+def funC(n, f):
+    return f(n) * 3
+
+
+# 将函数B传入函数A
+print(funA(funB(5)))
+print(funC(5, funA))
