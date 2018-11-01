@@ -9,6 +9,8 @@
 
 
 import logging
+import logging.handlers
+import datetime
 
 LOG_FORMAT = "%(asctime)s-----%(levelname)s-----%(message)s"
 logging.basicConfig(filename='D:\PythonProjects\study\myLog.log', level=logging.DEBUG, format=LOG_FORMAT)
@@ -17,3 +19,8 @@ logging.warning("this is a warning log")
 logging.debug("this is a debug log")
 logging.info("this is a info log")
 logging.critical("this is a critical log")
+
+logger = logging.getLogger("myLog")
+logger.setLevel(logging.DEBUG)
+
+rf_handler = logging.handlers.TimedRotatingFileHandler('all.log', when='midnight', interval=1)
