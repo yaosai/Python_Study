@@ -28,8 +28,11 @@ def run_proc(name):
 
 if __name__ == '__main__':
     print('Parent process %s.' % os.getpid())
+    # 创建子进程
     p = Process(target=run_proc, args=('test',))
     print('Child process will start.')
+    # 子进程启动
     p.start()
+    # 子进程运行
     p.join()
     print('Child process end.')
