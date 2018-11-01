@@ -33,6 +33,6 @@ if __name__ == '__main__':
     print('Child process will start.')
     # 子进程启动
     p.start()
-    # 子进程运行
+    # join()方法可以等待子进程结束后再继续往下运行，通常用于进程间的同步。
     p.join()
     print('Child process end.')
