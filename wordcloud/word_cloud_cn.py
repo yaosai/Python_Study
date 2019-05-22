@@ -8,10 +8,11 @@
 # @desc: 中文词云
 
 
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-import jieba
 import os
+
+import jieba
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
 
 path1 = os.path.abspath('.')  # 获取当前脚本所在的路径
 path2 = os.path.abspath('..')  # 获取当前脚本所在路径的上一级路径
