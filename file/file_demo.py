@@ -9,15 +9,16 @@
 
 import pickle as p
 
+file_dir = 'D:\PythonProjects\study\\file.txt'
 # r表示不需要转义
 # 以追加方式打开文件，如果没有就创建
-f = open(r"D:\PythonProjects\study\file.txt", 'a')
+f = open(file_dir, 'a')
 f.close()
 
 # with语句：上下文管理协议
 # 自动判断文件的作用域，自动关闭未使用的文件
 # 按行读
-with open(r"D:\PythonProjects\study\file.txt", 'r', encoding='UTF-8') as f1:
+with open(file_dir, 'r', encoding='UTF-8') as f1:
     # strline = f1.readline()
     # while strline:
     #     print(strline)
@@ -28,7 +29,7 @@ with open(r"D:\PythonProjects\study\file.txt", 'r', encoding='UTF-8') as f1:
         print(line)
 
 # 按字符读
-with open(r"D:\PythonProjects\study\file.txt", 'r', encoding='UTF-8') as f2:
+with open(file_dir, 'r', encoding='UTF-8') as f2:
     strChar = f2.read()
     print(len(strChar))
     print(strChar)
