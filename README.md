@@ -1,2 +1,2 @@
-# Python_Study_Demo
-最近因为学习大数据的需要，所以自学了python，将一些练习的demo放在这上面
+# python_study
+该文章包含了对python基础的学习操作，由简单到复杂。
